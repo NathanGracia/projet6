@@ -369,7 +369,7 @@ body {
 .btn-primary.btn-transparent.active {
     color: #fff;
     border-color: transparent #F22613;
-    background-color: #F22613; !important
+    background-color: #F22613 !important; 
 }
 
 .btn-primary:hover,
@@ -2085,4 +2085,7 @@ a#back-to-top.show {
 
 .food-menu-item h3 {
     margin-top: 0;
+}
+.active{
+    color: #F22613 !important
 }
