@@ -2,13 +2,15 @@
 
 namespace App\Entity;
 
+use App\Interfaces\IUploadable;
 use App\Repository\ImageRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 /**
  * @ORM\Entity(repositoryClass=ImageRepository::class)
  */
-class Image
+class Image implements IUploadable
 {
     /**
      * @ORM\Id
@@ -26,6 +28,12 @@ class Image
      * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $alt;
+
+    /**
+     * @var UploadedFile|null
+     */
+    private $file;
+
 
     /**
      * @ORM\ManyToOne(targetEntity=Trick::class, inversedBy="Image")
@@ -71,5 +79,15 @@ class Image
         $this->trick = $trick;
 
         return $this;
+    }
+
+    public function getFile(): ?UploadedFile
+    {
+        return $this->file;
+    }
+
+    public function getUploadDirectory(): string
+    {
+        return '/public/uploads/image';
     }
 }

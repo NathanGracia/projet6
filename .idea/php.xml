@@ -104,6 +104,7 @@
       <path value="$PROJECT_DIR$/SnowTricks/vendor/doctrine/migrations" />
       <path value="$PROJECT_DIR$/SnowTricks/vendor/laminas/laminas-code" />
       <path value="$PROJECT_DIR$/SnowTricks/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/SnowTricks/vendor/symfony/webpack-encore-bundle" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.2" />
