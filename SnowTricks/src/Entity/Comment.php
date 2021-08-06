@@ -28,7 +28,7 @@ class Comment
     private $content;
 
     /**
-     * @ORM\ManyToOne(targetEntity=Trick::class, inversedBy="Comments")
+     * @ORM\ManyToOne(targetEntity=Trick::class, inversedBy="comments")
      */
     private $trick;
 

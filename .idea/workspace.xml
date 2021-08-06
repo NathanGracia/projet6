@@ -20,33 +20,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c00923ee-821e-43c0-b3fb-f67bc1ecab47" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/SnowTricks/assets/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SnowTricks/assets/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SnowTricks/assets/controllers.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SnowTricks/assets/controllers/collection_controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SnowTricks/assets/styles/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SnowTricks/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SnowTricks/src/Form/TrickImageType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SnowTricks/src/Form/TrickVideoType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SnowTricks/templates/bundles/TwigBundle/Exception/error404.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SnowTricks/src/Controller/RegistrationController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SnowTricks/src/Form/UserType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SnowTricks/src/Listener/Doctrine/VideoListener.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SnowTricks/src/Service/VideoService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SnowTricks/templates/mail/signin.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SnowTricks/templates/security/signup.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/projet6.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/projet6.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SnowTricks/.env" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SnowTricks/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SnowTricks/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SnowTricks/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/migrations/Version20210423142423.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/public/img/intro-logo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/public/img/intro-logo.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/public/img/intro-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/public/img/intro-logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/public/js/plugins.js" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/public/js/plugins.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SnowTricks/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SnowTricks/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SnowTricks/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/src/Controller/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SnowTricks/src/Controller/TrickController.php" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/src/Controller/TrickController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/src/Entity/Image.php" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/src/Entity/Image.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SnowTricks/src/Entity/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/src/Entity/Comment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SnowTricks/src/Entity/Group.php" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/src/Entity/Group.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SnowTricks/src/Entity/Trick.php" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/src/Entity/Trick.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SnowTricks/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SnowTricks/src/Entity/Video.php" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/src/Entity/Video.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SnowTricks/src/Form/TrickType.php" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/src/Form/TrickType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SnowTricks/src/Form/TrickVideoType.php" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/src/Form/TrickVideoType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SnowTricks/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/symfony.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SnowTricks/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/templates/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/templates/home.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/templates/trick/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/templates/trick/_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SnowTricks/templates/trick/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/templates/trick/show.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,6 +172,14 @@
       <path value="$PROJECT_DIR$/SnowTricks/vendor/laminas/laminas-code" />
       <path value="$PROJECT_DIR$/SnowTricks/vendor/doctrine/orm" />
       <path value="$PROJECT_DIR$/SnowTricks/vendor/symfony/webpack-encore-bundle" />
+      <path value="$PROJECT_DIR$/SnowTricks/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/SnowTricks/vendor/doctrine/data-fixtures" />
+      <path value="$PROJECT_DIR$/SnowTricks/vendor/symfony/swiftmailer-bundle" />
+      <path value="$PROJECT_DIR$/SnowTricks/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/SnowTricks/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/SnowTricks/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/SnowTricks/vendor/symfony/polyfill-php81" />
+      <path value="$PROJECT_DIR$/SnowTricks/vendor/brick/math" />
     </include_path>
   </component>
   <component name="ProjectId" id="1qw62XNzMyWBloLHfrmLagirLTY" />
@@ -182,12 +190,15 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/SnowTricks" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/SnowTricks/templates" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\projet6\SnowTricks\templates" />
+      <recent name="C:\laragon\www\projet6\SnowTricks\src\Listener\Doctrine" />
+      <recent name="C:\laragon\www\projet6\SnowTricks\src\Service" />
       <recent name="C:\laragon\www\projet6\SnowTricks" />
       <recent name="C:\laragon\www\projet6\SnowTricks\src\Form" />
     </key>
@@ -215,6 +226,10 @@
       <workItem from="1623079061512" duration="1830000" />
       <workItem from="1623419832880" duration="1777000" />
       <workItem from="1624022473790" duration="2895000" />
+      <workItem from="1624620365619" duration="8218000" />
+      <workItem from="1626968172549" duration="1900000" />
+      <workItem from="1627641322093" duration="7101000" />
+      <workItem from="1628250581700" duration="3307000" />
     </task>
     <servers />
   </component>
@@ -234,31 +249,33 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="3325" y="-14" key="#com.intellij.ide.util.MemberChooser" timestamp="1620398110538">
-      <screen x="2560" y="-216" width="1920" height="1040" />
+    <state x="1020" y="272" key="#com.intellij.ide.util.MemberChooser" timestamp="1627641795957">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state x="1020" y="272" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/2560.-216.1920.1040@0.0.2560.1400" timestamp="1627641795957" />
     <state x="3325" y="-14" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/2560.-216.1920.1040@2560.-216.1920.1040" timestamp="1620398110538" />
-    <state x="925" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1619187848125">
+    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1627641599729">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="925" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/2560.213.1920.1040/0.0.2560.1400/4480.-216.1080.1880@0.0.2560.1400" timestamp="1619187848125" />
-    <state x="3250" y="59" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1620398097891">
-      <screen x="2560" y="-216" width="1920" height="1040" />
+    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2560.1400/2560.-216.1920.1040@0.0.2560.1400" timestamp="1627641599729" />
+    <state x="920" y="370" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1628252595417">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state x="920" y="370" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.2560.1400/2560.-216.1920.1040@0.0.2560.1400" timestamp="1628252595417" />
     <state x="3250" y="59" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.2560.1400/2560.-216.1920.1040@2560.-216.1920.1040" timestamp="1620398097891" />
-    <state x="987" y="370" key="FileChooserDialogImpl" timestamp="1621554809811">
+    <state x="987" y="370" key="FileChooserDialogImpl" timestamp="1628252361046">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="987" y="370" key="FileChooserDialogImpl/0.0.2560.1400/2560.-216.1920.1040@0.0.2560.1400" timestamp="1621554809811" />
+    <state x="987" y="370" key="FileChooserDialogImpl/0.0.2560.1400/2560.-216.1920.1040@0.0.2560.1400" timestamp="1628252361046" />
     <state x="3300" y="59" key="FileChooserDialogImpl/0.0.2560.1400/2560.-216.1920.1040@2560.-216.1920.1040" timestamp="1620394603282" />
-    <state x="1065" y="423" key="NewPhpClassDialog" timestamp="1623079685983">
+    <state x="1065" y="423" key="NewPhpClassDialog" timestamp="1628251471139">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1065" y="423" key="NewPhpClassDialog/0.0.2560.1400/2560.-216.1920.1040@0.0.2560.1400" timestamp="1623079685983" />
-    <state x="987" y="433" width="647" height="534" key="find.popup" timestamp="1623079521322">
+    <state x="1065" y="423" key="NewPhpClassDialog/0.0.2560.1400/2560.-216.1920.1040@0.0.2560.1400" timestamp="1628251471139" />
+    <state x="987" y="433" width="647" height="534" key="find.popup" timestamp="1627658221346">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="987" y="433" width="647" height="534" key="find.popup/0.0.2560.1400/2560.-216.1920.1040@0.0.2560.1400" timestamp="1623079521322" />
+    <state x="987" y="433" width="647" height="534" key="find.popup/0.0.2560.1400/2560.-216.1920.1040@0.0.2560.1400" timestamp="1627658221346" />
     <state x="3300" y="23" width="642" height="801" key="find.popup/0.0.2560.1400/2560.-216.1920.1040@2560.-216.1920.1040" timestamp="1620398685345" />
     <state x="1123" y="481" key="refactoring.ChangeSignatureDialog" timestamp="1621609525672">
       <screen x="0" y="0" width="2560" height="1400" />

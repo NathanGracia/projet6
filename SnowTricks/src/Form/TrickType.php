@@ -2,9 +2,11 @@
 
 namespace App\Form;
 
+use App\Entity\Group;
 use App\Entity\Image;
 use App\Entity\Trick;
 use App\Repository\GroupRepository;
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\CollectionType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -19,6 +21,13 @@ class TrickType extends AbstractType
             ->add('title')
             ->add('description')
             ->add('created_at')
+            ->add('trickGroup',
+                        EntityType::class,
+                [
+                    'class' => Group::class,
+                    'multiple' => false,
+                    'expanded' => false
+                  ])
             ->add(
                 'images',
                 CollectionType::class,

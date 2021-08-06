@@ -4,11 +4,13 @@ namespace App\Entity;
 
 use App\Repository\UserRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Security\Core\User\UserInterface;
+use Symfony\Component\Serializer\Annotation\Ignore;
 
 /**
  * @ORM\Entity(repositoryClass=UserRepository::class)
  */
-class User
+class User implements UserInterface
 {
     /**
      * @ORM\Id
@@ -38,9 +40,26 @@ class User
     private $password;
 
     /**
+     * @Ignore()
+     */
+    private $repeatPassword;
+
+    /**
      * @ORM\Column(type="string", length=255)
      */
     private $role;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $token;
+
+    /**
+     * @ORM\Column(type="boolean")
+     */
+    private $confirmed = false;
+
+
 
     public function getId(): ?int
     {
@@ -105,5 +124,76 @@ class User
         $this->role = $role;
 
         return $this;
+    }
+
+    public function getRoles()
+    {
+        if(!$this->getRole()){
+            return [];
+        }
+        return [$this->getRole()];
+    }
+
+    public function getSalt()
+    {
+       return;
+    }
+
+    public function getUsername()
+    {
+        return $this->getEmail();
+    }
+
+    public function eraseCredentials()
+    {
+
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getRepeatPassword()
+    {
+        return $this->repeatPassword;
+    }
+
+    /**
+     * @param mixed $repeatPassword
+     */
+    public function setRepeatPassword($repeatPassword): void
+    {
+        $this->repeatPassword = $repeatPassword;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getToken()
+    {
+        return $this->token;
+    }
+
+    /**
+     * @param mixed $token
+     */
+    public function setToken($token): void
+    {
+        $this->token = $token;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getConfirmed()
+    {
+        return $this->confirmed;
+    }
+
+    /**
+     * @param mixed $confirmed
+     */
+    public function setConfirmed($confirmed): void
+    {
+        $this->confirmed = $confirmed;
     }
 }

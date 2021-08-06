@@ -14,8 +14,8 @@ class TrickVideoType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('url' )
-            ->add('description');
+            ->add('url' );
+
     }
 
     public function configureOptions(OptionsResolver $resolver)

@@ -37,7 +37,7 @@ class Trick
     /**
      * @ORM\OneToMany(targetEntity=Comment::class, mappedBy="trick")
      */
-    private $Comments;
+    private $comments;
 
     /**
      * @ORM\OneToMany(targetEntity=Image::class, mappedBy="trick")
@@ -45,7 +45,7 @@ class Trick
     private $images;
 
     /**
-     * @ORM\OneToMany(targetEntity=Video::class, mappedBy="trick")
+     * @ORM\OneToMany(targetEntity=Video::class, mappedBy="trick", cascade={"persist"})
      */
     private $videos;
 
@@ -53,11 +53,11 @@ class Trick
      * @ORM\ManyToOne(targetEntity=Group::class, inversedBy="tricks")
      * @ORM\JoinColumn(nullable=false)
      */
-    private $TrickGroup;
+    private $trickGroup;
 
     public function __construct(){
         $this->created_at = new \DateTime();
-        $this->Comments = new ArrayCollection();
+        $this->comments = new ArrayCollection();
         $this->images = new ArrayCollection();
         $this->videos = new ArrayCollection();
     }
@@ -108,13 +108,13 @@ class Trick
      */
     public function getComments(): Collection
     {
-        return $this->Comments;
+        return $this->comments;
     }
 
     public function addComment(Comment $comment): self
     {
-        if (!$this->Comments->contains($comment)) {
-            $this->Comments[] = $comment;
+        if (!$this->comments->contains($comment)) {
+            $this->comments[] = $comment;
             $comment->setTrick($this);
         }
 
@@ -123,7 +123,7 @@ class Trick
 
     public function removeComment(Comment $comment): self
     {
-        if ($this->Comments->removeElement($comment)) {
+        if ($this->comments->removeElement($comment)) {
             // set the owning side to null (unless already changed)
             if ($comment->getTrick() === $this) {
                 $comment->setTrick(null);
@@ -195,12 +195,12 @@ class Trick
 
     public function getTrickGroup(): ?Group
     {
-        return $this->TrickGroup;
+        return $this->trickGroup;
     }
 
-    public function setTrickGroup(?Group $TrickGroup): self
+    public function setTrickGroup(?Group $trickGroup): self
     {
-        $this->TrickGroup = $TrickGroup;
+        $this->trickGroup = $trickGroup;
 
         return $this;
     }
