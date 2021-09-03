@@ -95,6 +95,11 @@
                 <button type="submit" class="btn btn-primary">Search</button>
             </form>
         </div>
+        {% for message in app.flashes('success') %}
+            <div class="alert alert-success "style="margin-top: 5%">
+                {{ message }}
+            </div>
+        {% endfor %}
         <div class="container" style="margin-top: 5%; background-color: whitesmoke">
             {% block body %}{% endblock %}
         </div>
