@@ -57,7 +57,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand smoothie" href="/index.html">SNOW <span class="theme-accent-color">TRICKS</span></a>
+                    <a class="navbar-brand smoothie" href="{{ path('home') }}">SNOW <span class="theme-accent-color">TRICKS</span></a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -66,7 +66,12 @@
                         <li><a href="/" class="page-scroll">A propos</a></li>  
                         <li><a href="{{ path('trick_index') }}" class="page-scroll {% if current_menu is defined and current_menu == 'trick.list' %} active {% endif %}">Tricks</a></li>
                         <li><a href="{{ path('group_index') }}" class="page-scroll {% if current_menu is defined and current_menu == 'group.list' %} active {% endif %}">Groupes de tricks</a></li>
-                        <li><a href="{{ path('login') }}" class="page-scroll">Se connecter</a></li>
+                        {% if app.user %}
+                            <li><a href="#" class="page-scroll">{{ app.user.pseudo }}</a></li>
+                        {% else %}
+                            <li><a href="{{ path('login') }}" class="page-scroll">Se connecter</a></li>
+
+                        {% endif %}
                         <li class="dropdown">
                             <a href="/#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">Extras <span class="pe-7s-angle-down"></span></a>
                             <ul class="dropdown-menu" role="menu">

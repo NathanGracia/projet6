@@ -81,6 +81,14 @@ class Image implements IUploadable
         return $this;
     }
 
+
+    public function setFile(?UploadedFile $file): self
+    {
+        $this->file = $file;
+
+        return $this;
+    }
+
     public function getFile(): ?UploadedFile
     {
         return $this->file;
@@ -90,4 +98,5 @@ class Image implements IUploadable
     {
         return '/public/uploads/image';
     }
+
 }

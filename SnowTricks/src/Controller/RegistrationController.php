@@ -38,13 +38,14 @@ class RegistrationController extends AbstractController
             // 3) Encode the password (you could also do this via Doctrine listener)
             //test password
 
-           if($user->getPassword() == $user->getRepeatPassword()){
+
                $password = $passwordEncoder->encodePassword($user, $user->getPassword());
                $user->setPassword($password);
 
                // 4) Send email
                $token = Uuid::uuid4()->toString();
                $user->setToken($token);
+
 
                // Create the Transport
                $transport = (new \Swift_SmtpTransport('smtp.gmail.com', 465, "ssl"))
@@ -70,7 +71,7 @@ class RegistrationController extends AbstractController
                $entityManager = $this->getDoctrine()->getManager();
                $entityManager->persist($user);
                $entityManager->flush();
-           }
+
 
 
             // ... do any other work - like sending them an email, etc

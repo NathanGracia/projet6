@@ -2,8 +2,12 @@
 
 namespace App\Controller;
 
+use App\Entity\Comment;
 use App\Entity\Trick;
+use App\Form\CommentType;
+use App\Form\GroupType;
 use App\Form\TrickType;
+use App\Repository\CommentRepository;
 use App\Repository\GroupRepository;
 use App\Repository\TrickRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -54,12 +58,32 @@ class TrickController extends AbstractController
     }
 
     /**
-     * @Route("/{id}", name="trick_show", methods={"GET"})
+     * @Route("/{id}", name="trick_show", methods={"GET", "POST"})
      */
-    public function show(Trick $trick): Response
+    public function show(Trick $trick, Request $request, CommentRepository $commentRepository): Response
     {
+
+        $comment = new Comment();
+        $form_comment = $this->createForm(CommentType::class, $comment);
+        $form_comment->handleRequest($request);
+
+        if ($form_comment->isSubmitted() && $form_comment->isValid()) {
+
+            $comment->setTrick($trick);
+            $comment->setAuthor($this->getUser());
+            $comment->setCreatedAt(new \DateTime());
+            $entityManager = $this->getDoctrine()->getManager();
+            $entityManager->persist($comment);
+            $entityManager->flush();
+
+
+        }
+
+        $comments = $trick->getComments();
         return $this->render('trick/show.html.twig', [
             'trick' => $trick,
+            'form_comment' => $form_comment->createView(),
+            'comments' => $comments
         ]);
     }
 
@@ -74,7 +98,7 @@ class TrickController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $this->getDoctrine()->getManager()->flush();
 
-            return $this->redirectToRoute('trick_index');
+            return $this->redirectToRoute('trick_idex');
         }
 
         return $this->render('trick/edit.html.twig', [
