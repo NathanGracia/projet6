@@ -14,7 +14,7 @@ class TrickImageType extends AbstractType
     {
         $builder
             ->add('file', FileType::class)
-            ->add('description');
+            ->add('alt');
     }
 
     public function configureOptions(OptionsResolver $resolver)
