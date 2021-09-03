@@ -20,31 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c00923ee-821e-43c0-b3fb-f67bc1ecab47" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/SnowTricks/src/Controller/RegistrationController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SnowTricks/src/Form/UserType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SnowTricks/src/Listener/Doctrine/VideoListener.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SnowTricks/src/Service/VideoService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SnowTricks/templates/mail/signin.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SnowTricks/templates/security/signup.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/projet6.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/projet6.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SnowTricks/src/Form/CommentType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SnowTricks/templates/trick/_comment_form.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/.env" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/src/Controller/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SnowTricks/src/Controller/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/src/Controller/RegistrationController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SnowTricks/src/Controller/TrickController.php" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/src/Controller/TrickController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SnowTricks/src/Entity/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/src/Entity/Comment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/src/Entity/Group.php" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/src/Entity/Group.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/src/Entity/Trick.php" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/src/Entity/Trick.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SnowTricks/src/Entity/Image.php" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/src/Entity/Image.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SnowTricks/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/src/Entity/Video.php" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/src/Entity/Video.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/src/Form/TrickType.php" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/src/Form/TrickType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/src/Form/TrickVideoType.php" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/src/Form/TrickVideoType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SnowTricks/src/Form/UserType.php" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/src/Form/UserType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SnowTricks/src/Security/AppAuthenticator.php" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/src/Security/AppAuthenticator.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SnowTricks/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/templates/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SnowTricks/templates/trick/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/templates/trick/show.html.twig" afterDir="false" />
     </list>
@@ -229,7 +214,8 @@
       <workItem from="1624620365619" duration="8218000" />
       <workItem from="1626968172549" duration="1900000" />
       <workItem from="1627641322093" duration="7101000" />
-      <workItem from="1628250581700" duration="3307000" />
+      <workItem from="1628250581700" duration="4552000" />
+      <workItem from="1630671398580" duration="856000" />
     </task>
     <servers />
   </component>
