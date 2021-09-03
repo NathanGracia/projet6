@@ -47,7 +47,7 @@ class TrickController extends AbstractController
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($trick);
             $entityManager->flush();
-
+            $this->addFlash('success', 'Le trick a bien été créé');
             return $this->redirectToRoute('trick_index');
         }
 
@@ -55,6 +55,7 @@ class TrickController extends AbstractController
             'trick' => $trick,
             'form' => $form->createView(),
         ]);
+
     }
 
     /**
@@ -97,8 +98,8 @@ class TrickController extends AbstractController
 
         if ($form->isSubmitted() && $form->isValid()) {
             $this->getDoctrine()->getManager()->flush();
-
-            return $this->redirectToRoute('trick_idex');
+            $this->addFlash('success', 'Le trick a bien été edité');
+            return $this->redirectToRoute('trick_index');
         }
 
         return $this->render('trick/edit.html.twig', [
@@ -116,6 +117,7 @@ class TrickController extends AbstractController
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->remove($trick);
             $entityManager->flush();
+            $this->addFlash('success', 'Le trick a bien été supprimé');
         }
 
         return $this->redirectToRoute('trick_index');

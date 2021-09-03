@@ -71,6 +71,7 @@ class RegistrationController extends AbstractController
                $entityManager = $this->getDoctrine()->getManager();
                $entityManager->persist($user);
                $entityManager->flush();
+            $this->addFlash('success', "Le mail d'inscription a bien été envoyé au nouvel utilisateur");
 
 
 
@@ -95,6 +96,7 @@ class RegistrationController extends AbstractController
 
 
         $entityManager->flush();
+        $this->addFlash('success', 'Votre compte est bien validé. Merci de vous connecter');
         return $this->redirectToRoute('login');
     }
 }

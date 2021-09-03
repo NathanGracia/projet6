@@ -38,6 +38,7 @@ class GroupController extends AbstractController
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($group);
             $entityManager->flush();
+            $this->addFlash('success', 'Le groupe a bien été créé');
 
             return $this->redirectToRoute('group_index');
         }
@@ -68,6 +69,7 @@ class GroupController extends AbstractController
 
         if ($form->isSubmitted() && $form->isValid()) {
             $this->getDoctrine()->getManager()->flush();
+            $this->addFlash('success', 'Le groupe a bien été edité');
 
             return $this->redirectToRoute('group_index');
         }
@@ -87,6 +89,7 @@ class GroupController extends AbstractController
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->remove($group);
             $entityManager->flush();
+            $this->addFlash('success', 'Le trick a bien été supprimé');
         }
 
         return $this->redirectToRoute('group_index');
