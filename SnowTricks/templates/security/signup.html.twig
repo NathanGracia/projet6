@@ -3,8 +3,19 @@
 {% block title %}Création de compte{% endblock %}
 
 {% block body %}
-{{ form_start(form) }}
-    {{ form_widget(form) }}
-<button class="btn" type="submit">{{ button_label|default('Save') }}</button>
-{{ form_end(form) }}
+    <div class="mt20">
+        {{ form_start(form) }}
+        {{ form_row(form.email, { 'label': 'Votre email :', 'attr': {'class': 'form-control'}}) }}
+        {{ form_row(form.pseudo, { 'label': 'Votre pseudo :', 'attr': {'class': 'form-control'}}) }}
+        {{ form_row(form.password.first, { 'label': 'Votre mot de passe :', 'attr': {'class': 'form-control'}}) }}
+        {{ form_row(form.password.second, { 'label': 'Répetez votre mot de passe :', 'attr': {'class': 'form-control'}}) }}
+
+
+        {{ form_widget(form) }}
+        <button class="btn btn-lg btn-primary" style="margin-top: 2%;margin-bottom: 2%" type="submit">
+            S'enregistrer
+        </button>
+        {{ form_end(form) }}
+    </div>
+
 {% endblock %}
