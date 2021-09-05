@@ -79,6 +79,7 @@ class TrickController extends AbstractController
 
 
         }
+       // dd($trick->getVideos()->get(0));
 
         $comments = $trick->getComments();
         return $this->render('trick/show.html.twig', [

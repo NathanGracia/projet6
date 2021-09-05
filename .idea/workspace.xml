@@ -21,11 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="c00923ee-821e-43c0-b3fb-f67bc1ecab47" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/public/img/intro-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/public/img/intro-logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/public/img/loading.GIF" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/public/uploads/image/loading.GIF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/src/Controller/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/templates/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/templates/home.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SnowTricks/src/Controller/TrickController.php" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/src/Controller/TrickController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SnowTricks/templates/trick/_comment_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/templates/trick/_comment_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SnowTricks/templates/trick/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/templates/trick/show.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,7 +211,7 @@
       <workItem from="1627641322093" duration="7101000" />
       <workItem from="1628250581700" duration="4552000" />
       <workItem from="1630671398580" duration="2089000" />
-      <workItem from="1630848736858" duration="4067000" />
+      <workItem from="1630848736858" duration="8976000" />
     </task>
     <servers />
   </component>
