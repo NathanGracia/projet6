@@ -84,7 +84,7 @@ class GroupController extends AbstractController
     }
 
     /**
-     * @Route("/{id}", name="group_delete", methods={"POST"})
+     * @Route("/{id}/delete", name="group_delete", methods={"POST"})
      * @IsGranted("ROLE_USER")
      */
     public function delete(Request $request, Group $group): Response

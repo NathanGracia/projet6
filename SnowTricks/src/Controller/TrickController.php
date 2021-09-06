@@ -115,7 +115,7 @@ class TrickController extends AbstractController
     }
 
     /**
-     * @Route("/{id}", name="trick_delete", methods={"POST"})
+     * @Route("/{id}/delete", name="trick_delete", methods={"POST"})
      * @IsGranted("ROLE_USER")
      */
     public function delete(Request $request, Trick $trick): Response
