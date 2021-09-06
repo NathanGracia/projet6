@@ -9,6 +9,7 @@ use App\Repository\GroupRepository;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\CollectionType;
+use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
@@ -19,8 +20,8 @@ class TrickType extends AbstractType
     {
         $builder
             ->add('title')
-            ->add('description')
-            ->add('created_at')
+            ->add('description', TextareaType::class, array(
+                'attr' => array('cols' => '5', 'rows' => '5')))
             ->add('trickGroup',
                         EntityType::class,
                 [

@@ -20,6 +20,7 @@ export default class extends Controller {
         this.$buttonAdd.innerText = 'Ajouter une '+ this.name;
         this.$buttonAdd.classList.add('btn');
         this.$buttonAdd.classList.add('btn-info');
+        this.$buttonAdd.classList.add('mt20');
         this.$buttonAdd.setAttribute('type', 'button');
 
         this.$buttonAdd.addEventListener('click', (e) => {
@@ -52,6 +53,7 @@ export default class extends Controller {
         $buttonRemove.innerText = 'Supprimer ' + this.name;
         $buttonRemove.classList.add('btn');
         $buttonRemove.classList.add('btn-danger');
+        $buttonRemove.classList.add('mt20');
         $buttonRemove.setAttribute('type', 'button');
 
         $buttonRemove.addEventListener('click', (e) => {

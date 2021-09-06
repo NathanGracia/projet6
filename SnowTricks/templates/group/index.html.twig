@@ -1,35 +1,33 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Group index{% endblock %}
+{% block title %}Liste des groupes{% endblock %}
 
 {% block body %}
-    <h1>Group index</h1>
+    <h1>Liste des groupes de tricks</h1>
 
     <table class="table">
         <thead>
             <tr>
-                <th>Id</th>
-                <th>Name</th>
-                <th>actions</th>
+                <th>Nom du groupe</th>
+                <th>Actions</th>
             </tr>
         </thead>
         <tbody>
         {% for group in groups %}
             <tr>
-                <td>{{ group.id }}</td>
                 <td>{{ group.name }}</td>
                 <td>
-                    <a href="{{ path('group_show', {'id': group.id}) }}">show</a>
-                    <a href="{{ path('group_edit', {'id': group.id}) }}">edit</a>
+                    <a href="{{ path('group_edit', {'id': group.id}) }}" class="btn btn-info">Modifier</a>
                 </td>
             </tr>
         {% else %}
             <tr>
-                <td colspan="3">no records found</td>
+                <td colspan="3">Aucun groupes trouvés</td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
 
-    <a href="{{ path('group_new') }}">Create new</a>
+    <a href="{{ path('group_new') }}">  <button class="btn btn-primary" style="font-size: 14px; padding: 3px; margin-bottom: 2%">Nouveau groupe</button>
+    </a>
 {% endblock %}

@@ -3,48 +3,92 @@
 {% block title %}Trick{% endblock %}
 
 {% block body %}
-    <h1>Trick</h1>
+    {% if trick.images.get(0) is not null %}
+        <div style="  width: 100%;
+                background-image: url(/uploads/image/{{ trick.images.get(0).fileName }});
+                height: 405px;
+                background-color: purple;
+                background-position: center;
+                background-size:cover;"></div>
+    {% else %}
+        <div style="  width: 100%;
+                    background-image: url(http://weloveski.intersport-rent.fr/wp-content/uploads/2018/11/Bonfire_Aspect_Jkt_Action_Werni_Stock_2-copie-1200x610.jpg);
+                    height: 405px;
+                    background-color: purple;
+                    background-position: center;
+                    background-size:cover;"></div>
+    {% endif %}
 
-    <table class="table">
-        <tbody>
-            <tr>
-                <th>Id</th>
-                <td>{{ trick.id }}</td>
-            </tr>
-            <tr>
-                <th>Title</th>
-                <td>{{ trick.title }}</td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>{{ trick.description }}</td>
-            </tr>
-            <tr>
-                <th>Created_at</th>
-                <td>{{ trick.createdAt ? trick.createdAt|date('Y-m-d H:i:s') : '' }}</td>
-            </tr>
-        </tbody>
-    </table>
+    <h1>{{ trick.title }}</h1>
+    <div class="d-flex flex-wrap justify-content-center" >
+        {% for image in trick.images %}
+            <div style="margin: 1%" >
+                <img src="/uploads/image/{{ image.fileName }}" style="" width="200" height="150" alt="{{ image.alt }}">
+            </div>
+
+        {% endfor %}
+        {% for video in trick.videos %}
+            <div style="margin: 1%" >
+            {% if video.platform == 1 %}
 
 
+               <iframe id="ytplayer" type="text/html" width="200" height="150"
+                         src="http://www.youtube.com/embed/{{ video.platformId }}"
+                         frameborder="0"></iframe>
+                {% elseif video.platform == 2 %}
+                    <iframe frameborder="0" width="200" height="150"
+                            src="https://www.dailymotion.com/embed/video/{{ video.platformId }}"
+                            allowfullscreen
+                            allow="autoplay; fullscreen">
+                    </iframe>
+                {% elseif video.platform == 3 %}
+                    <iframe src="https://player.vimeo.com/video/{{ video.platformId }}?embedparameter=value" width="200" height="150" frameborder="0" allowfullscreen></iframe>
+            {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+    <div style="margin: 1%">
+        <p>
+            {{ trick.description }}
+        </p>
+    </div>
 
+    <div style="margin-top: 5%;">
+        <strong>Créé le :</strong> {{ trick.createdAt ? trick.createdAt|date('Y-m-d H:i:s') : '' }}<br>
+        <strong>Groupe de tricks : </strong>{{ trick.trickGroup.name }}
+    </div>
 
-    <a href="{{ path('trick_index') }}">back to list</a>
+<div class="d-flex flex-row-reverse" style="margin: 2%">
+    <a href="#" class="card-link"><a href="{{ path('trick_edit', {'id': trick.id}) }}" class="btn btn-primary" style="font-size: 14px; padding: 3px">Modifier le trick</a>
 
-    <a href="{{ path('trick_edit', {'id': trick.id}) }}">edit</a>
+</div>
 
-    {{ include('trick/_delete_form.html.twig') }}
-
-    {% for comment in comments %}
-        <h3>{{ comment.author.pseudo}}</h3>
-        <p>{{ comment.content }}</p>
-    {% endfor %}
+    <div class="d-flex justify-content-center"><h2>Commentaires</h2></div>
 
     {% if app.user %}
-        Laissez un commentaire
+
         {{ include('trick/_comment_form.html.twig') }}
     {% else %}
-        Connectez vous pour laisser un commentaire.     <a href="{{ path('login') }}">Se connecter</a>
+        Connectez vous pour laisser un commentaire.     <a href="{{ path('login') }}"class="btn btn-primary" style="font-size: 10px; padding: 3px">Se connecter</a>
 
     {% endif %}
+    <div style="margin-top: 10%">
+        {% for comment in comments %}
+            <div class="media-body">
+                <div class="well well-lg">
+                    <h4 class="media-heading text-uppercase reviews">{{ comment.author.pseudo }}</h4>
+                    <ul class="media-date text-uppercase reviews list-inline d-flex flex-row-reverse">
+                        <li class="dd">{{ comment.createdAt ? comment.createdAt|date('d/m/Y') : '' }}</li>
+
+                    </ul>
+                    <p class="media-comment">
+                        {{ comment.content }}
+                    </p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+
+
 {% endblock %}

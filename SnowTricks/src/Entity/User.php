@@ -46,7 +46,7 @@ class User implements UserInterface
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
      */
-    private $role;
+    private $role = "ROLE_USER";
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -125,6 +125,7 @@ class User implements UserInterface
 
     public function getRole(): ?string
     {
+
         return $this->role;
     }
 

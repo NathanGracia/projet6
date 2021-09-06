@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Trick index{% endblock %}
+{% block title %}Liste des tricks{% endblock %}
 
 {% block body %}
     <h1>Liste des tricks</h1>
@@ -8,23 +8,25 @@
     <table class="table">
         <thead>
             <tr>
-                <th>Id</th>
-                <th>Title</th>
+
+                <th>Titre</th>
                 <th>Description</th>
-                <th>Created_at</th>
+                <th>Date</th>
                 <th>actions</th>
             </tr>
         </thead>
         <tbody>
         {% for trick in tricks %}
             <tr>
-                <td>{{ trick.id }}</td>
+
                 <td>{{ trick.title }}</td>
-                <td>{{ trick.description }}</td>
+                <td>{{ trick.description|length > 50 ? trick.description|slice(0, 50) ~ '...' : trick.description  }}</td>
                 <td>{{ trick.createdAt ? trick.createdAt|date('Y-m-d H:i:s') : '' }}</td>
                 <td>
-                    <a href="{{ path('trick_show', {'id': trick.id}) }}">Voir</a>
-                    <a href="{{ path('trick_edit', {'id': trick.id}) }}">Modifier</a>
+                    <a href="{{ path('trick_show', {'id': trick.id}) }}" class="btn btn-success">Voir</a>
+
+                    <a href="{{ path('trick_edit', {'id': trick.id}) }}" class="btn btn-info">Modifier</a>
+
                 </td>
             </tr>
         {% else %}
@@ -35,5 +37,5 @@
         </tbody>
     </table>
 
-    <a href="{{ path('trick_new') }}">Nouveau trick</a>
+    <a href="{{ path('trick_new') }}">  <button class="btn btn-primary" style="font-size: 14px; padding: 3px; margin-bottom: 2%">Nouveau trick</button>
 {% endblock %}
