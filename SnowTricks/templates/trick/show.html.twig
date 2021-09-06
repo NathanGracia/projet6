@@ -28,11 +28,23 @@
 
         {% endfor %}
         {% for video in trick.videos %}
-
             <div style="margin: 1%" >
+            {% if video.platform == 1 %}
+
+
                <iframe id="ytplayer" type="text/html" width="200" height="150"
                          src="http://www.youtube.com/embed/{{ video.platformId }}"
-                         frameborder="0"></iframe></div>
+                         frameborder="0"></iframe>
+                {% elseif video.platform == 2 %}
+                    <iframe frameborder="0" width="200" height="150"
+                            src="https://www.dailymotion.com/embed/video/{{ video.platformId }}"
+                            allowfullscreen
+                            allow="autoplay; fullscreen">
+                    </iframe>
+                {% elseif video.platform == 3 %}
+                    <iframe src="https://player.vimeo.com/video/{{ video.platformId }}?embedparameter=value" width="200" height="150" frameborder="0" allowfullscreen></iframe>
+            {% endif %}
+            </div>
         {% endfor %}
     </div>
     <div style="margin: 1%">

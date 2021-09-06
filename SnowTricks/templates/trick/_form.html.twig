@@ -1,4 +1,30 @@
 {{ form_start(form) }}
+
+<div style="margin: 2%">
+    {{ form_row(form.title, { 'label': 'Titre du trick :', 'attr': {'class': 'form-control'} }) }}
+
+</div>
+<div style="margin: 2%">
+    {{ form_row(form.description, { 'label': 'Description du trick :', 'attr': {'class': 'form-control'} }) }}
+</div>
+
+<div style="margin: 2%">
+    {{ form_row(form.trickGroup, { 'label': 'Groupe de trick :','label_attr': {'class': 'true'}, 'attr': {'class': 'form-control'} }) }}
+
+</div>
+<br>
+<div style="margin: 2%">
+    {{ form_row(form.images, { 'label': 'Ajouter des images :', 'attr': {'class': ''} }) }}
+</div>
+<div style="margin: 2%">
+    {{ form_row(form.videos, { 'label': 'Ajouter des videos :', 'attr': {'class': ''} }) }}
+</div>
+<div style="margin: 2%">
+    <button class="btn btn-primary" style="font-size: 18px; padding: 3px" type="submit">{{ button_label|default('Publier le trick') }}</button>
+
+</div>
+
+
     {{ form_widget(form) }}
-    <button class="btn" type="submit">{{ button_label|default('Save') }}</button>
+
 {{ form_end(form) }}

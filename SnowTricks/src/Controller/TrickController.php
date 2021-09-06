@@ -43,6 +43,8 @@ class TrickController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+            $trick->setCreatedAt(new \DateTime());
+
 
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($trick);
@@ -100,7 +102,7 @@ class TrickController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $this->getDoctrine()->getManager()->flush();
             $this->addFlash('success', 'Le trick a bien été edité');
-            return $this->redirectToRoute('trick_index');
+            return $this->redirectToRoute('trick_show', ['id' => $trick->getId() ]);
         }
 
         return $this->render('trick/edit.html.twig', [

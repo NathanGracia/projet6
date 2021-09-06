@@ -23,19 +23,24 @@
 
                 </div>
                  <div class="card-body">
+                     <div class="d-flex flex-wrap justify-content-center">
                     <h5 class="card-title">{{ trick.title }}</h5>
-
+                     </div>
                 </div>
 
                 <div class="card-body">
-                    <a href="#" class="card-link"><a href="{{ path('trick_show', {'id': trick.id}) }}" class="btn btn-primary" style="font-size: 10px; padding: 3px">Voir</a></a>
+                    <div class="d-flex flex-wrap justify-content-center">
+                    <a href="#" class="card-link"><a href="{{ path('trick_show', {'id': trick.id}) }}" class="btn btn-primary" style="font-size: 10px; padding: 3px; margin: 1%">Voir</a></a>
 
-                    <a href="#" class="card-link"><a href="{{ path('trick_edit', {'id': trick.id}) }}" class="btn btn-primary" style="font-size: 10px; padding: 3px">Modifier</a></a>
-
+                    <a href="#" class="card-link"><a href="{{ path('trick_edit', {'id': trick.id}) }}" class="btn btn-primary" style="font-size: 10px; padding: 3px;  margin: 1%">Modifier</a></a>
+                    </div>
                 </div>
             </div>
         {% endfor %}
     </div>
+<div class="d-flex flex-wrap justify-content-center">
+    <a href="{{ path('trick_new') }}">  <button class="btn btn-primary" style="font-size: 14px; padding: 3px; margin-bottom: 5%">Nouveau trick</button>
+</div>
 
 
 
@@ -44,4 +49,5 @@
 
 
 
-{% endblock %}
+
+    {% endblock %}

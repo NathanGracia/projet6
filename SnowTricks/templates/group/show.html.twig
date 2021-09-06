@@ -18,9 +18,9 @@
         </tbody>
     </table>
 
-    <a href="{{ path('group_index') }}">back to list</a>
+    <a href="{{ path('group_index') }}">Retour à la liste des groupes</a>
 
-    <a href="{{ path('group_edit', {'id': group.id}) }}">edit</a>
+    <a href="{{ path('group_edit', {'id': group.id}) }}" class="btn btn-info">Modifier</a>
 
     {{ include('group/_delete_form.html.twig') }}
 {% endblock %}
