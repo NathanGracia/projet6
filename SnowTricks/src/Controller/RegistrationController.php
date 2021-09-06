@@ -46,19 +46,24 @@ class RegistrationController extends AbstractController
                $token = Uuid::uuid4()->toString();
                $user->setToken($token);
 
+               $address = getenv('MAILER_URL');
+               $password = getenv('MAILER_PASSWORD');
+               $host = getenv('MAILER_HOST');
+               $port = getenv('MAILER_PORT');
+               $encryption = getenv('MAILER_ENCRYPTION');
 
                // Create the Transport
-               $transport = (new \Swift_SmtpTransport('smtp.gmail.com', 465, "ssl"))
-                   ->setUsername('nathan.gracia.863@gmail.com')
-                   ->setPassword('unqdljjregvmadvf');
+               $transport = (new \Swift_SmtpTransport($host, $port, $encryption))
+                   ->setUsername($address)
+                   ->setPassword($password);
 
                // Create the Mailer using your created Transport
                $mailer = new \Swift_Mailer($transport);
 
                // Create a message
                $message = (new \Swift_Message('Activez votre compte SnowTricks'))
-                   ->setFrom('nathan.gracia.863@gmail.com')
-                   ->setReplyTo('nathan.gracia.863@gmail.com')
+                   ->setFrom($address)
+                   ->setReplyTo($address)
                    ->setTo($user->getEmail())
                    ->setBody($this->render('mail/signin.html.twig', ['token' => $token]),  'text/html');
 

@@ -20,21 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c00923ee-821e-43c0-b3fb-f67bc1ecab47" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/SnowTricks/snowtricks_exemple.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/public/api/easyshare.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/public/js/bigvideo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/public/uploads/image/cillian-6135e5350afe8.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/src/Controller/GroupController.php" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/src/Controller/GroupController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/src/Controller/TrickController.php" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/src/Controller/TrickController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/templates/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/templates/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/templates/index-video.html" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/templates/index-video.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/templates/single-post.html" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/templates/single-post.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/templates/trick/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/templates/trick/_delete_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/templates/trick/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/templates/trick/edit.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/templates/trick/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/templates/trick/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/templates/trick/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/templates/trick/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SnowTricks/.env" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SnowTricks/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SnowTricks/public/uploads/image/4f6c9d56254829b2789b573cde701174-61322144d797e.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SnowTricks/public/uploads/image/abstract-4541671-960-720-6134ce71b1230.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SnowTricks/public/uploads/image/loading.GIF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SnowTricks/src/Controller/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/src/Controller/RegistrationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SnowTricks/templates/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/templates/home.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +174,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/SnowTricks" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -188,10 +184,10 @@
       <recent name="C:\laragon\www\projet6\SnowTricks\public\uploads\image" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\projet6\SnowTricks" />
       <recent name="C:\laragon\www\projet6\SnowTricks\templates" />
       <recent name="C:\laragon\www\projet6\SnowTricks\src\Listener\Doctrine" />
       <recent name="C:\laragon\www\projet6\SnowTricks\src\Service" />
-      <recent name="C:\laragon\www\projet6\SnowTricks" />
       <recent name="C:\laragon\www\projet6\SnowTricks\src\Form" />
     </key>
   </component>
@@ -259,10 +255,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="546" y="320" key="#com.jetbrains.php.lang.intentions.PhpImportClassDialog#/0.0.1536.824@0.0.1536.824" timestamp="1630918347540" />
-    <state x="987" y="370" key="FileChooserDialogImpl" timestamp="1628252361046">
+    <state x="987" y="370" key="FileChooserDialogImpl" timestamp="1630947398409">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="987" y="370" key="FileChooserDialogImpl/0.0.2560.1400/2560.-216.1920.1040@0.0.2560.1400" timestamp="1628252361046" />
+    <state x="987" y="370" key="FileChooserDialogImpl/0.0.2560.1400/2560.-216.1920.1040@0.0.2560.1400" timestamp="1630947398409" />
     <state x="1065" y="423" key="NewPhpClassDialog" timestamp="1628251471139">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
