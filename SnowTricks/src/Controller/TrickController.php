@@ -10,6 +10,7 @@ use App\Form\TrickType;
 use App\Repository\CommentRepository;
 use App\Repository\GroupRepository;
 use App\Repository\TrickRepository;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -32,6 +33,7 @@ class TrickController extends AbstractController
 
     /**
      * @Route("/new", name="trick_new", methods={"GET","POST"})
+     * @IsGranted("ROLE_USER")
      */
     public function new(Request $request, GroupRepository $groupRepository): Response
     {
@@ -93,6 +95,7 @@ class TrickController extends AbstractController
 
     /**
      * @Route("/{id}/edit", name="trick_edit", methods={"GET","POST"})
+     * @IsGranted("ROLE_USER")
      */
     public function edit(Request $request, Trick $trick): Response
     {
@@ -113,6 +116,7 @@ class TrickController extends AbstractController
 
     /**
      * @Route("/{id}", name="trick_delete", methods={"POST"})
+     * @IsGranted("ROLE_USER")
      */
     public function delete(Request $request, Trick $trick): Response
     {

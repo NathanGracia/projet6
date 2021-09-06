@@ -21,27 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c00923ee-821e-43c0-b3fb-f67bc1ecab47" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-
-      <change beforePath="$PROJECT_DIR$/SnowTricks/assets/controllers/collection_controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/assets/controllers/collection_controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SnowTricks/src/Controller/GroupController.php" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/src/Controller/GroupController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SnowTricks/src/Controller/TrickController.php" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/src/Controller/TrickController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/src/Form/TrickImageType.php" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/src/Form/TrickImageType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/src/Form/TrickType.php" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/src/Form/TrickType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/src/Form/TrickVideoType.php" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/src/Form/TrickVideoType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/templates/group/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/templates/group/_delete_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/templates/group/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/templates/group/_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/templates/group/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/templates/group/edit.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/templates/group/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/templates/group/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/templates/group/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/templates/group/new.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/templates/group/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/templates/group/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/templates/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/templates/home.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/templates/trick/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/templates/trick/_delete_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/templates/trick/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/templates/trick/_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/templates/trick/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/templates/trick/edit.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/templates/trick/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/templates/trick/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/templates/trick/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/templates/trick/new.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/templates/trick/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/templates/trick/show.html.twig" afterDir="false" />
-
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,7 +211,6 @@
       <workItem from="1627641322093" duration="7101000" />
       <workItem from="1628250581700" duration="4552000" />
       <workItem from="1630671398580" duration="2089000" />
-
     </task>
     <servers />
   </component>
