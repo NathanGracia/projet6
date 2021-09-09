@@ -23,9 +23,9 @@
                 <td>{{ trick.description|length > 50 ? trick.description|slice(0, 50) ~ '...' : trick.description  }}</td>
                 <td>{{ trick.createdAt ? trick.createdAt|date('Y-m-d H:i:s') : '' }}</td>
                 <td>
-                    <a href="{{ path('trick_show', {'id': trick.id}) }}" class="btn btn-success">Voir</a>
+                    <a href="{{ path('trick_show', {'slug': trick.slug}) }}" class="btn btn-success">Voir</a>
 
-                    <a href="{{ path('trick_edit', {'id': trick.id}) }}" class="btn btn-info">Modifier</a>
+                    <a href="{{ path('trick_edit', {'slug': trick.slug}) }}" class="btn btn-info">Modifier</a>
 
                 </td>
             </tr>

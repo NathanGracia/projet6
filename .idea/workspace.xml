@@ -20,17 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c00923ee-821e-43c0-b3fb-f67bc1ecab47" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/SnowTricks/snowtricks_exemple.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/projet6.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/projet6.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/.env" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/public/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/public/uploads/image/4f6c9d56254829b2789b573cde701174-61322144d797e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/public/uploads/image/abstract-4541671-960-720-6134ce71b1230.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/public/uploads/image/loading.GIF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/src/Controller/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/src/Controller/RegistrationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SnowTricks/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SnowTricks/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SnowTricks/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SnowTricks/src/Controller/TrickController.php" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/src/Controller/TrickController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SnowTricks/src/Entity/Trick.php" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/src/Entity/Trick.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SnowTricks/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/symfony.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SnowTricks/templates/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/templates/home.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SnowTricks/templates/trick/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/templates/trick/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SnowTricks/templates/trick/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/templates/trick/_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SnowTricks/templates/trick/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/templates/trick/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SnowTricks/templates/trick/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/templates/trick/show.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,6 +167,9 @@
       <path value="$PROJECT_DIR$/SnowTricks/vendor/ramsey/collection" />
       <path value="$PROJECT_DIR$/SnowTricks/vendor/symfony/polyfill-php81" />
       <path value="$PROJECT_DIR$/SnowTricks/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/SnowTricks/vendor/stof/doctrine-extensions-bundle" />
+      <path value="$PROJECT_DIR$/SnowTricks/vendor/behat/transliterator" />
+      <path value="$PROJECT_DIR$/SnowTricks/vendor/gedmo/doctrine-extensions" />
     </include_path>
   </component>
   <component name="ProjectId" id="1qw62XNzMyWBloLHfrmLagirLTY" />
@@ -263,10 +269,11 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1065" y="423" key="NewPhpClassDialog/0.0.2560.1400/2560.-216.1920.1040@0.0.2560.1400" timestamp="1628251471139" />
-    <state x="592" y="116" width="873" height="708" key="find.popup" timestamp="1630927885939">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="3300" y="-70" width="1092" height="894" key="find.popup" timestamp="1631213617042">
+      <screen x="2560" y="-216" width="1920" height="1040" />
     </state>
     <state x="592" y="116" width="873" height="708" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1630927885939" />
     <state x="987" y="433" width="647" height="534" key="find.popup/0.0.2560.1400/2560.-216.1920.1040@0.0.2560.1400" timestamp="1627658221346" />
+    <state x="3300" y="-70" width="1092" height="894" key="find.popup/0.0.2560.1400/2560.-216.1920.1040@2560.-216.1920.1040" timestamp="1631213617042" />
   </component>
 </project>
