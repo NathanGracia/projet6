@@ -116,6 +116,7 @@
       <path value="$PROJECT_DIR$/SnowTricks/vendor/stof/doctrine-extensions-bundle" />
       <path value="$PROJECT_DIR$/SnowTricks/vendor/behat/transliterator" />
       <path value="$PROJECT_DIR$/SnowTricks/vendor/gedmo/doctrine-extensions" />
+      <path value="$PROJECT_DIR$/SnowTricks/vendor/symfony/apache-pack" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.2" />

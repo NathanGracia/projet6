@@ -36,6 +36,7 @@ class GroupController extends AbstractController
         $form = $this->createForm(GroupType::class, $group);
         $form->handleRequest($request);
 
+
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($group);
