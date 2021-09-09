@@ -11,6 +11,7 @@ use App\Repository\CommentRepository;
 use App\Repository\GroupRepository;
 use App\Repository\TrickRepository;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -41,11 +42,14 @@ class TrickController extends AbstractController
 
 
 
+
         $form = $this->createForm(TrickType::class, $trick);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
             $trick->setCreatedAt(new \DateTime());
+
+
 
 
             $entityManager = $this->getDoctrine()->getManager();
@@ -63,10 +67,12 @@ class TrickController extends AbstractController
     }
 
     /**
-     * @Route("/{id}", name="trick_show", methods={"GET", "POST"})
+     * @Route("/{slug}", name="trick_show", methods={"GET", "POST"})
+     *
      */
-    public function show(Trick $trick, Request $request, CommentRepository $commentRepository): Response
+    public function show(string $slug, Request $request, CommentRepository $commentRepository, TrickRepository $trickRepository): Response
     {
+        $trick = $trickRepository->findOneBy(['slug'=>$slug]);
 
         $comment = new Comment();
         $form_comment = $this->createForm(CommentType::class, $comment);
@@ -94,7 +100,7 @@ class TrickController extends AbstractController
     }
 
     /**
-     * @Route("/{id}/edit", name="trick_edit", methods={"GET","POST"})
+     * @Route("/{slug}/edit", name="trick_edit", methods={"GET","POST"})
      * @IsGranted("ROLE_USER")
      */
     public function edit(Request $request, Trick $trick): Response
@@ -115,7 +121,7 @@ class TrickController extends AbstractController
     }
 
     /**
-     * @Route("/{id}/delete", name="trick_delete", methods={"POST"})
+     * @Route("/{slug}/delete", name="trick_delete", methods={"POST"})
      * @IsGranted("ROLE_USER")
      */
     public function delete(Request $request, Trick $trick): Response

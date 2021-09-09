@@ -6,6 +6,7 @@
       <sourceFolder url="file://$MODULE_DIR$/SnowTricks/src" isTestSource="false" packagePrefix="App\" />
       <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/SnowTricks/tests" isTestSource="true" packagePrefix="App\Tests\" />
+      <excludeFolder url="file://$MODULE_DIR$/SnowTricks/vendor/behat/transliterator" />
       <excludeFolder url="file://$MODULE_DIR$/SnowTricks/vendor/brick/math" />
       <excludeFolder url="file://$MODULE_DIR$/SnowTricks/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/SnowTricks/vendor/doctrine/annotations" />
@@ -28,6 +29,7 @@
       <excludeFolder url="file://$MODULE_DIR$/SnowTricks/vendor/doctrine/sql-formatter" />
       <excludeFolder url="file://$MODULE_DIR$/SnowTricks/vendor/egulias/email-validator" />
       <excludeFolder url="file://$MODULE_DIR$/SnowTricks/vendor/friendsofphp/proxy-manager-lts" />
+      <excludeFolder url="file://$MODULE_DIR$/SnowTricks/vendor/gedmo/doctrine-extensions" />
       <excludeFolder url="file://$MODULE_DIR$/SnowTricks/vendor/laminas/laminas-code" />
       <excludeFolder url="file://$MODULE_DIR$/SnowTricks/vendor/laminas/laminas-eventmanager" />
       <excludeFolder url="file://$MODULE_DIR$/SnowTricks/vendor/laminas/laminas-zendframework-bridge" />
@@ -44,6 +46,7 @@
       <excludeFolder url="file://$MODULE_DIR$/SnowTricks/vendor/ramsey/collection" />
       <excludeFolder url="file://$MODULE_DIR$/SnowTricks/vendor/ramsey/uuid" />
       <excludeFolder url="file://$MODULE_DIR$/SnowTricks/vendor/sensio/framework-extra-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/SnowTricks/vendor/stof/doctrine-extensions-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/SnowTricks/vendor/swiftmailer/swiftmailer" />
       <excludeFolder url="file://$MODULE_DIR$/SnowTricks/vendor/symfony/asset" />
       <excludeFolder url="file://$MODULE_DIR$/SnowTricks/vendor/symfony/browser-kit" />
