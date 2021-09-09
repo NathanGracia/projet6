@@ -81,7 +81,7 @@
 
     {% endif %}
     <div style="margin-top: 10%">
-        {% for comment in comments %}
+        {% for comment in paginated_comments %}
             <div class="media-body">
                 <div class="well well-lg">
                     <div class="row  d-flex">
@@ -102,6 +102,8 @@
                 </div>
             </div>
         {% endfor %}
+        <div class="d-flex justify-content-center"> {{ knp_pagination_render(paginated_comments) }}</div>
+
     </div>
 
 

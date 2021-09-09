@@ -117,6 +117,8 @@
       <path value="$PROJECT_DIR$/SnowTricks/vendor/behat/transliterator" />
       <path value="$PROJECT_DIR$/SnowTricks/vendor/gedmo/doctrine-extensions" />
       <path value="$PROJECT_DIR$/SnowTricks/vendor/symfony/apache-pack" />
+      <path value="$PROJECT_DIR$/SnowTricks/vendor/knplabs/knp-components" />
+      <path value="$PROJECT_DIR$/SnowTricks/vendor/knplabs/knp-paginator-bundle" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.2" />
