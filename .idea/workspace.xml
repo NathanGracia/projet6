@@ -20,20 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c00923ee-821e-43c0-b3fb-f67bc1ecab47" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/SnowTricks/public/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SnowTricks/src/Controller/UserController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SnowTricks/src/Form/ImageType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SnowTricks/templates/user/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/projet6.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/projet6.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SnowTricks/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SnowTricks/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/src/Controller/GroupController.php" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/src/Controller/GroupController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/src/Controller/TrickController.php" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/src/Controller/TrickController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SnowTricks/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/config/bundles.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SnowTricks/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SnowTricks/templates/trick/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/SnowTricks/templates/trick/show.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,6 +161,8 @@
       <path value="$PROJECT_DIR$/SnowTricks/vendor/behat/transliterator" />
       <path value="$PROJECT_DIR$/SnowTricks/vendor/gedmo/doctrine-extensions" />
       <path value="$PROJECT_DIR$/SnowTricks/vendor/symfony/apache-pack" />
+      <path value="$PROJECT_DIR$/SnowTricks/vendor/knplabs/knp-components" />
+      <path value="$PROJECT_DIR$/SnowTricks/vendor/knplabs/knp-paginator-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1qw62XNzMyWBloLHfrmLagirLTY" />

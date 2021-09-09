@@ -11,6 +11,7 @@ use App\Repository\CommentRepository;
 use App\Repository\GroupRepository;
 use App\Repository\ImageRepository;
 use App\Repository\TrickRepository;
+use Knp\Component\Pager\PaginatorInterface;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -71,7 +72,7 @@ class TrickController extends AbstractController
      * @Route("/{slug}", name="trick_show", methods={"GET", "POST"})
      *
      */
-    public function show(string $slug, Request $request, CommentRepository $commentRepository, TrickRepository $trickRepository, ImageRepository $imageRepository): Response
+    public function show(string $slug, Request $request, CommentRepository $commentRepository, TrickRepository $trickRepository, ImageRepository $imageRepository, PaginatorInterface $paginator): Response
     {
         $trick = $trickRepository->findOneBy(['slug'=>$slug]);
 
@@ -96,10 +97,15 @@ class TrickController extends AbstractController
         foreach ($comments as $comment){
             $comment->imageAuthor = $imageRepository->findOneBy(["id"=>$comment->getAuthor()->getIdImage()]);
         }
+        $paginated_comments = $paginator->paginate(
+            $comments,
+            $request->query->getInt('page', 1),
+            10
+        );
         return $this->render('trick/show.html.twig', [
             'trick' => $trick,
             'form_comment' => $form_comment->createView(),
-            'comments' => $comments
+            'paginated_comments' => $paginated_comments
         ]);
     }
 
