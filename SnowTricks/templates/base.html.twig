@@ -71,7 +71,7 @@
                         <li><a href="{{ path('trick_index') }}" class="page-scroll {% if current_menu is defined and current_menu == 'trick.list' %} active {% endif %}">Tricks</a></li>
                         <li><a href="{{ path('group_index') }}" class="page-scroll {% if current_menu is defined and current_menu == 'group.list' %} active {% endif %}">Groupes de tricks</a></li>
                         {% if app.user %}
-                            <li><a href="#" class="page-scroll">Vous êtes : {{ app.user.pseudo }}</a></li>
+                            <li><a href="{{ path('user_show') }}" class="page-scroll">Vous êtes : {{ app.user.pseudo }}</a></li>
                             <li><a href="{{ path('app_logout') }}" class="page-scroll">Se déconnecter</a></li>
                         {% else %}
                             <li><a href="{{ path('login') }}" class="page-scroll">Se connecter</a></li>
