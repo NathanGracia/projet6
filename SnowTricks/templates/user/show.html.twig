@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ app.user.pseudo }}{% endblock %}
+
+{% block body %}
+
+    <h1>{{ user.pseudo }}</h1>
+    <p><strong>Pseudo :</strong>{{ user.pseudo }}</p>
+    <p><strong>Email :</strong>{{ user.email }}</p>
+
+    {% if user.image is not null %}
+    <div style="margin: 1%" >
+        <img src="/uploads/image/{{ user.image.fileName }}" style="max-width: 200px; max-height: 200px;"  alt="{{  user.image.alt }}">
+    </div>
+    {% endif %}
+    {{ form_start(form_image) }}
+
+
+    <div style="margin: 2%">
+        {{ form_row(form_image.file, { 'label': 'Importer une nouvelle image :', 'attr': {'class': ''} }) }}
+    </div>
+    <div style="margin: 2%">
+        <button class="btn btn-primary" style="font-size: 18px; padding: 3px" type="submit">{{ button_label|default('Sauvegarder mon image') }}</button>
+
+    </div>
+
+
+    {{ form_widget(form_image) }}
+
+    {{ form_end(form_image) }}
+{% endblock %}

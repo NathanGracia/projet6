@@ -9,6 +9,7 @@ use App\Form\GroupType;
 use App\Form\TrickType;
 use App\Repository\CommentRepository;
 use App\Repository\GroupRepository;
+use App\Repository\ImageRepository;
 use App\Repository\TrickRepository;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
@@ -70,7 +71,7 @@ class TrickController extends AbstractController
      * @Route("/{slug}", name="trick_show", methods={"GET", "POST"})
      *
      */
-    public function show(string $slug, Request $request, CommentRepository $commentRepository, TrickRepository $trickRepository): Response
+    public function show(string $slug, Request $request, CommentRepository $commentRepository, TrickRepository $trickRepository, ImageRepository $imageRepository): Response
     {
         $trick = $trickRepository->findOneBy(['slug'=>$slug]);
 
@@ -91,7 +92,10 @@ class TrickController extends AbstractController
         }
        // dd($trick->getVideos()->get(0));
 
-        $comments = $trick->getComments();
+        $comments = $commentRepository->findBy(["trick" => $trick], ["createdAt"=>"DESC"]);
+        foreach ($comments as $comment){
+            $comment->imageAuthor = $imageRepository->findOneBy(["id"=>$comment->getAuthor()->getIdImage()]);
+        }
         return $this->render('trick/show.html.twig', [
             'trick' => $trick,
             'form_comment' => $form_comment->createView(),

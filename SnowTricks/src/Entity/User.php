@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use App\Repository\ImageRepository;
 use App\Repository\UserRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
@@ -22,9 +23,11 @@ class User implements UserInterface
     private $id;
 
     /**
-     * @ORM\OneToOne(targetEntity=Image::class, cascade={"persist", "remove"})
+     *@ORM\Column(type="integer",  nullable=true)
      */
-    private $image;
+    private $id_image;
+
+
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -75,17 +78,7 @@ class User implements UserInterface
         return $this->id;
     }
 
-    public function getImage(): ?Image
-    {
-        return $this->image;
-    }
 
-    public function setImage(?Image $image): self
-    {
-        $this->image = $image;
-
-        return $this;
-    }
 
     public function getPseudo(): ?string
     {
@@ -221,4 +214,28 @@ class User implements UserInterface
 
         return $this;
     }
+    /**
+     * @return mixed
+     */
+    public function getIdImage()
+    {
+        return $this->id_image;
+    }
+
+    /**
+     * @param mixed $id_image
+     */
+    public function setIdImage($id_image): void
+    {
+        $this->id_image = $id_image;
+    }
+    /**
+     * @return mixed
+     */
+    public function getImage(ImageRepository $imageRepository)
+    {
+        $image = $imageRepository->findOneBy(['id'=>$this->getIdImage()]);
+        return $image;
+    }
+
 }
